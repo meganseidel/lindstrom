@@ -14,7 +14,7 @@ h1 {
 	padding-bottom: 0px;
 	text-align: center;
 	color: #14232B;
-	font-family: Homemade Apple Regular;
+	font-family: 'Homemade Apple', cursive;
 	font-size: 3.75em;
 	line-height: 140px;
 }
@@ -154,7 +154,10 @@ footer {
 	float: right;
 	max-width: 48%;
 }
-@media screen and (max-width: 800px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
 	body {
 		font-size: 10px;
 	}
@@ -197,3 +200,46 @@ footer {
 		max-width: 100%;
 	}
 }
+/* @media screen and (max-width: 800px) {
+	body {
+		font-size: 10px;
+	}
+	nav {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	h1 {
+		line-height: 80px;
+	}
+	h2 {
+		line-height: 30px;
+	}
+	footer {
+		max-width: 50%;
+	}
+	#logo {
+		max-width: 25%;
+		padding: 1px;
+	}
+	#baby {
+		max-width: 100%;
+		padding: 4px;
+	}
+	#famlife {
+		max-width: 100%;
+		padding: 4px;
+	}
+	#prom {
+		max-width: 100%;
+		padding: 4px;
+	}
+	#gtone {
+		float: none;
+		max-width: 100%;
+	}
+	#gttwo {
+		float: none;
+		max-width: 100%;
+	}
+} */

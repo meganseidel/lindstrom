@@ -14,7 +14,7 @@ h1 {
 	padding-bottom: 0px;
 	text-align: center;
 	color: #14232B;
-	font-family: Homemade Apple Regular;
+	font-family: 'Homemade Apple', cursive;
 	font-size: 3.75em;
 	line-height: 140px;
 }
@@ -140,8 +140,11 @@ footer {
 	clear: both;
 	height: 0;
 }
-@media screen and (max-width: 800px) {
-	body {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  	body {
 		font-size: 10px;
 	}
 	nav {
@@ -176,3 +179,39 @@ footer {
 		max-width: 75%;
 	}
 }
+/* @media screen and (max-width: 800px) {
+	body {
+		font-size: 10px;
+	}
+	nav {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	h1 {
+		line-height: 80px;
+	}
+	h2 {
+		line-height: 30px;
+	}
+	footer {
+		max-width: 50%;
+	}
+	#logo {
+		max-width: 25%;
+		padding: 1px;
+	}
+	.left {
+		float: none;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	.right {
+		float: none;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	.promo {
+		max-width: 75%;
+	}
+} */
