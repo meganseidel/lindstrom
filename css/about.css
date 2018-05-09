@@ -154,6 +154,7 @@ footer {
 	float: right;
 	max-width: 48%;
 }
+/*
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -199,8 +200,8 @@ footer {
 		float: none;
 		max-width: 100%;
 	}
-}
-/* @media screen and (max-width: 800px) {
+} */
+@media screen and (max-width: 800px) {
 	body {
 		font-size: 10px;
 	}
@@ -242,4 +243,4 @@ footer {
 		float: none;
 		max-width: 100%;
 	}
-} */
+}
