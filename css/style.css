@@ -126,8 +126,10 @@ footer {
 	clear: both;
 	height: 0;
 }
-
-@media screen and (max-width: 800px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
 	body {
 		font-size: 10px;
 	}
@@ -154,3 +156,31 @@ footer {
 		max-width: 100%;
 	}
 }
+/*
+@media screen and (max-width: 800px) {
+	body {
+		font-size: 10px;
+	}
+	nav {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	h1 {
+		line-height: 80px;
+	}
+	h2 {
+		line-height: 30px;
+	}
+	footer {
+		max-width: 50%;
+	}
+	#logo {
+		max-width: 25%;
+		padding: 1px;
+	}
+	#catmegan1 {
+		padding: 4px;
+		max-width: 100%;
+	}
+} */
